@@ -21,5 +21,9 @@ public class Main {
       }
         HogwartsPrinter hogwarts = new HogwartsPrinter();
        hogwarts.studensFromFaculty((Gryffindor) students[0], (Gryffindor) students[1]);
+
+        HogwartsPrinter hogwartss = new HogwartsPrinter();
+        hogwarts.studensFromFaculty((Hogwarts) students[0], (Hogwarts) students[6]);
+
     }
     }

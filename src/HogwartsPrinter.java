@@ -12,9 +12,7 @@ public class HogwartsPrinter {
             System.out.println(first.getName() + " одинакова посиле " + second.getName());
         }
     }
-    public void print(Hogwarts student){
-    System.out.println(student);
-    }
+
     public void anyStudent(Hogwarts first, Hogwarts second){
         System.out.println(first.getName() + " одинакова посиле " + second.getName());
     }
@@ -30,6 +28,10 @@ public class HogwartsPrinter {
         } else {
             System.out.println(first.getName() + " одинакова посиле " + second.getName());
         }
+    }
+
+    public void print(Hogwarts student){
+        System.out.println(student);
     }
 
 }
