@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         Hogwarts[] students = {
-                new Gryffindor("Harry", "Potter", 1, 85, 74, 79, 80, 90),
+                new Gryffindor("Harry", "Potter", 1, 85, 74, 89, 80, 90),
                 new Gryffindor("Hermione", "Granger", 1, 79, 80, 80, 90, 89),
                 new Gryffindor("Ron", "Weasley", 1, 68, 70, 75, 80, 81),
-                new Hufflepuff("Zachariah", "Smith", 2, 60, 86, 70, 67, 90),
+                new Hufflepuff("Zachariah", "Smith", 2, 60, 86, 70, 37, 40),
                 new Hufflepuff("Cedric", "Diggory", 2, 64, 56, 61, 83, 75),
                 new Hufflepuff("Justin", "Finch-Fletchley", 2, 70, 82, 71, 64, 59),
                 new Ravenclaw("Zhou", "Chang", 3, 59, 82, 90, 79, 96, 87),
@@ -17,13 +17,22 @@ public class Main {
         };
        HogwartsPrinter printer = new HogwartsPrinter();
        for (Hogwarts student : students) {
-            printer.print(student);
+        printer.print(student);
       }
         HogwartsPrinter hogwarts = new HogwartsPrinter();
-       hogwarts.studensFromFaculty((Gryffindor) students[0], (Gryffindor) students[1]);
+        hogwarts.studensYoursFaculty((Gryffindor) students[0], (Gryffindor) students[1]);
+
+        HogwartsPrinter hogwartsHufflepuff = new HogwartsPrinter();
+        hogwartsHufflepuff.studensYoursFacultyHufflepuff((Hufflepuff) students[5], (Hufflepuff) students[3]);
+
+        HogwartsPrinter hogwartsRavenclaw = new HogwartsPrinter();
+        hogwartsRavenclaw.studensYoursFacultyRavenclaw((Ravenclaw) students[7], (Ravenclaw) students[8]);
+
+        HogwartsPrinter hogwartsSlytherin = new HogwartsPrinter();
+        hogwartsSlytherin.studensYoursFacultySlytherin((Slytherin) students[9], (Slytherin) students[10]);
 
         HogwartsPrinter hogwartss = new HogwartsPrinter();
-        hogwarts.studensFromFaculty((Hogwarts) students[0], (Hogwarts) students[6]);
+        hogwartss.studensFromFacultyHogwarts((Hogwarts) students[0], (Hogwarts) students[6]);
 
     }
     }
